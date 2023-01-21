@@ -1,0 +1,163 @@
+footer{
+    background:#6232d6; 
+}
+.footerTopBorder{
+    border-bottom: 1px solid #7346e0;
+}
+.footerTopBox{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    padding: 35px 0;
+    border-right: 1px solid #7346e0;
+}
+.borderRightNone{
+    border-right:none;
+}
+.footerTopText h6{
+    font-size: 16px;
+    color:#fff;
+    font-weight: 500;
+    margin-bottom:10px;
+}
+.footerTopText span{
+    font-size: 18px;
+    color:#fff;
+    font-weight: 700;
+}
+.footerBottomBox{
+    h4{
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 30px;
+        margin-bottom: 25px;  
+        
+   }
+   h4::before{
+    position: absolute;
+    content: '';
+    left:0;
+    bottom:0;
+    width: 60px;
+    height: 1px;
+    background: #fff;
+}
+ 
+
+    p {
+        color: #fff;
+        line-height: 26px;
+        margin-bottom: 23px;
+        text-align: justify;
+    }
+}
+
+.footerSocial{ 
+    h4 {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 14px;
+    }
+    a {
+        color: #fff;
+        font-size: 16px;
+        margin-right: 15px;
+        transition:all linear .5s;
+    }
+    a:hover{
+        color:#23cc88;
+    }
+}
+.footerPost{
+    margin-top:35px;
+}
+.fPostBox{
+    display: flex;
+    gap:15px;
+    align-items: center;
+    
+    span {
+        color: #fff;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    a {
+        font-size: 15px;
+        color: #ffff;
+        margin-bottom: 0;
+        line-height: 24px;
+        display: inline-block;
+    }
+}
+.fPostBox:not(:last-child){
+    border-bottom: 1px solid #7346e0;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+.newsLetterForm form input {
+	height: 56px;
+	width: 100%;
+	padding: 0 20px;
+	background: none;
+	color: #fff;
+	border: 1px solid #7346e0;
+	margin-bottom: 25px;
+}
+.newsLetterForm form input:focus {
+	border-color: #fff;
+}
+
+.copyRight{
+    background:#fff;
+}
+.copyRightText p a {
+	color: #23cc88;
+}
+.footerSocial ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.footerSocial ul li {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    margin-left: 15px;
+    position: relative;
+}
+.footerSocial ul li:last-child{
+    padding-right: 0px;
+}
+.footerSocial ul li:not(:last-child)::before {
+	position: absolute;
+	width: 1px;
+	height: 40px;
+	right: 0;
+	content: "";
+	background: #efefef;
+	transform: rotate(32deg);
+}
+.footerSocial ul li a {
+	height: 40px;
+	width: 40px;
+	background: #3b5999;
+	color: #fff;
+	display: block;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	float: left;
+	margin-right: 10px;
+}
+.footerSocial ul li:nth-child(2) a {
+	background: #55acee;
+}
+.footerSocial ul li:nth-child(3) a {
+	background: #007bb6;
+}
+.footerSocial ul li:nth-child(4) a {
+	background: #bd081c;
+}
+

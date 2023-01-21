@@ -1,0 +1,83 @@
+
+.teacherInfo{
+    padding: 20px;
+}
+.teacherInfo a{
+	font-size: 24px;
+	color: #00394f;
+	font-weight: 700;
+	margin-bottom: 3px;
+	font-family: 'Roboto', sans-serif;
+}
+.team-info a:hover {
+	color: #23cc88;
+}
+.teacherInfo p{
+    color: #555555;
+    font-size: 16px;
+}
+
+.teacherDtext h3 {
+	font-size: 40px;
+	font-family: 'Fredoka One', cursive;
+	font-weight: normal;
+	color: #00394f;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 500;
+	margin-bottom:40px;
+}
+.teacherInfoList{
+	color:#212529;
+	font-size: 18px;
+}
+.listFlex{
+	display: flex;
+	justify-content: flex-start;
+	padding-top:5px;
+}
+.listFlex .listName{
+	width:calc(115px);
+}
+.listFlex .listText{
+	width:calc(100% - 115px);
+	position:relative;
+}
+.listFlex .listText::before{
+	position:absolute;
+	content:':';
+	left:-10px;
+	top:-1px;
+}
+.detailsSocialIcon {
+	margin-top:40px;
+}
+.detailsSocialIcon a i{
+	@include socialIcon;
+	border-radius: 50%;
+}
+.fabg{
+	background:#3B5999;
+}
+.twbg{
+	background:#1C9CEA;
+}
+.libg{
+	background:#E54885;
+}
+.inbg{
+	background:#2491C8;
+}
+.teacherContent h4{
+	font-size: 26px;
+	line-height: 30px;
+	font-family: 'Fredoka One', cursive;
+	font-weight: normal;
+	margin-bottom: 10px;
+	color: #00394f;
+}
+.teacherContent p{
+	font-size: 16px;
+	line-height: 24px;
+	text-align: justify;
+}

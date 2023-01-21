@@ -1,0 +1,22 @@
+.blogDetailsDate{
+	padding:40px 0px 30px 25px;
+    span {
+        color:#555;
+        padding-right: 10px;
+        i{
+            margin-right: 4px;
+        }
+    }
+}
+
+.blogDetails {
+    padding: 40px 50px;
+	box-shadow: 0 0 10px rgba(136, 136, 136, 0.1);
+	background: #fff;
+}
+
+.detailsShare a i{
+    @include socialIcon;
+    border-radius: 6px;
+    font-size: 20px;
+}
