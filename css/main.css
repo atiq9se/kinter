@@ -1369,6 +1369,9 @@ footer {
   float: left;
   margin-right: 10px;
 }
+.footerSocial ul li a i{
+  line-height: 40px;
+}
 
 .footerSocial ul li:nth-child(2) a {
   background: #55acee;
