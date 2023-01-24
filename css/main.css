@@ -75,13 +75,18 @@ img {
 .ptb_100 {
   padding: 100px 0px;
 }
-
+.pt_50{
+  padding-top:50px;
+}
 .mt_40 {
   margin-top: 40px;
 }
 
 .mb_40 {
   margin-bottom: 40px;
+}
+.mt100{
+  margin-top:-100px;
 }
 
 .ptb_30 {
@@ -137,6 +142,7 @@ p {
   color: #555555;
 }
 
+
 .about_header h2 {
   font-family: "Fredoka One", sans-serif;
   font-size: 36px;
@@ -189,7 +195,11 @@ p {
   display: block;
   z-index: 2;
 }
-
+.sectionBgOne{
+  background-image: -moz-linear-gradient( 0deg, rgb(35,204,136) 0%, rgb(142,207,53) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(35,204,136) 0%, rgb(142,207,53) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(35,204,136) 0%, rgb(142,207,53) 100%);
+}
 .sectionBgTwo {
   background: -webkit-gradient(linear, left top, right top, from(rgb(255, 79, 88)), to(rgb(255, 180, 0)));
   background: linear-gradient(90deg, rgb(255, 79, 88) 0%, rgb(255, 180, 0) 100%);
@@ -1620,4 +1630,11 @@ footer {
     text-align: center;
     padding-top: 10px;
   }
+}
+
+
+/* about page css */
+
+.aboutImg img{
+  width: 100%;
 }
