@@ -105,6 +105,7 @@ p {
 .sideBox {
 	background: #fff;
 	box-shadow: 0 0 10px rgba(136, 136, 136, 0.1);
+  margin-bottom: 30px;
 }
 .sideBox h2 {
 	font-size: 18px;
@@ -1738,10 +1739,12 @@ footer {
 }
 .sidePost{
   display: flex;
-  gap:2%;
+  gap:4%;
+  border-bottom:1px solid #f6fafd;
+  padding:20px;
 }
 .sidePostI{
-  flex:0 0 40%;
+  flex:0 0 35%;
 }
 .sidePostI img{
   width:100%;
@@ -1756,7 +1759,36 @@ footer {
 	background-size: 0 100%;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+  color:#00394f;
+  font-size: 18px;
+  font-weight: bold;
 }
 .sidePostText a:hover {
 	background-size: 100% 100%;
+}
+
+.popularTag {
+  display: flex;
+  flex-wrap:wrap;
+  padding:20px;
+  gap:3%;
+}
+.popularTag .tagButton{
+  margin-bottom: 10px;
+}
+.archiveList{
+  padding:20px 30px;
+}
+.archiveList a{
+  display: flex;
+  justify-content: space-between;
+  color:#00394f;
+  font-size: 18px;
+  padding:15px 0px;
+  border-bottom: 1px solid #f6fafd;
+  transition:all linear .5s;
+}
+.archiveList a:hover{
+  color:#23cc88;
+  padding-left:5px;
 }
