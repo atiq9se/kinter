@@ -101,6 +101,44 @@ p {
   color: #555555;
 }
 
+
+.sideBox {
+	background: #fff;
+	box-shadow: 0 0 10px rgba(136, 136, 136, 0.1);
+}
+.sideBox h2 {
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	line-height: 18px;
+	text-transform: capitalize;
+  color:#00394f;
+  border-bottom: 1px solid #f6fafd;
+  padding:20px 35px;
+}
+.tagButton {
+  display: inline-block;
+  font-size: 17px;
+}
+.tagButton {
+	font-size: 15px;
+	display: inline-block;
+	padding: 8px 15px;
+  line-height: 24px;
+	color: #696969;
+	border: 1px solid #f4f4f4;
+	border-radius: 5px;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	overflow: hidden;
+}
+.tagButton:hover{
+  background-image: -webkit-linear-gradient( 145deg, rgb(35,204,136) 0%, rgb(142,207,53) 100%);
+  background-image: linear-gradient( 145deg, rgb(35,204,136) 0%, rgb(142,207,53) 100%);
+}
 .greenText {
   color: #40cd72 !important;
 }
@@ -1150,28 +1188,17 @@ ul.aboutList {
   text-align: justify;
 }
 
-.blogDetailsDate {
-  padding: 40px 0px 30px 25px;
-}
-.blogDetailsDate span {
-  color: #555;
-  padding-right: 10px;
-}
-.blogDetailsDate span i {
-  margin-right: 4px;
-}
 
 .blogDetails {
-  padding: 40px 50px;
   -webkit-box-shadow: 0 0 10px rgba(136, 136, 136, 0.1);
           box-shadow: 0 0 10px rgba(136, 136, 136, 0.1);
   background: #fff;
 }
 
-.detailsShare a i {
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
+.shareIcon a i {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
   text-align: center;
   color: #fff;
   margin-right: 10px;
@@ -1646,4 +1673,90 @@ footer {
 /* teacher page css */
 .teacherImg img{
   width:100%;
+}
+
+/* class details page css */
+.classDetailsImg img{
+  width:100%;
+}
+.classDetailsText{
+  padding:30px 50px;
+}
+.adminText{
+  display: flex;
+  gap: 20px;
+}
+.cdpText{
+  padding:10px 0px;
+}
+.cdpText img{
+  width: 100%;
+  margin-top:10px;
+}
+.cdpText p{
+  font-size: 16px;
+  line-height: 28px;
+  color:#555;
+  text-align:justify;
+  font-family: 'Roboto', sans-serif;
+}
+.cdpVideo img{
+  width: 100%;
+}
+.cdpShare{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courseFeatures{
+  padding:30px 35px;
+}
+.courseFeatures li{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   color:#555;
+   padding:10px 0px;
+   font-size: 17px;
+}
+.courseFeatures li .que{
+   width:45%;
+}
+.courseFeatures li .ans{
+   position:relative;
+   font-family: 'Roboto', sans-serif;
+   color:#00394f;
+   padding-left:8px;
+}
+.courseFeatures li .ans:after{
+   position:absolute;
+   content:':';
+   top:45%;
+   transform: translateY(-50%);
+   left:0;
+   width:20px;
+}
+.sidePost{
+  display: flex;
+  gap:2%;
+}
+.sidePostI{
+  flex:0 0 40%;
+}
+.sidePostI img{
+  width:100%;
+}
+.sidePostText a {
+	display: inline !important;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position-y: -2px;
+	background-image: linear-gradient(transparent calc(100% - 2px),currentColor 1px);
+	transition: .6s cubic-bezier(.215,.61,.355,1);
+	background-size: 0 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.sidePostText a:hover {
+	background-size: 100% 100%;
 }
