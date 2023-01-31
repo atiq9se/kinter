@@ -1,3 +1,4 @@
+
 html,
 body {
   overflow-x: hidden;
@@ -465,6 +466,7 @@ nav {
 }
 
 /*=======NAVIGATION PART CSS END======= */
+
 /* BANNER PART CSS START */
 .banner_item {
   background-size: cover !important;
@@ -544,12 +546,12 @@ nav {
 }
 
 /* =======BANNER PART CSS END======== */
+
 /* =======WELCOME PART CSS START=======*/
 .welcome_item {
   background-color: rgb(255, 255, 255);
   -webkit-box-shadow: 0px 0px 10px 0px rgba(136, 136, 136, 0.9);
           box-shadow: 0px 0px 10px 0px rgba(136, 136, 136, 0.9);
-  width: 300px;
   height: 400px;
   padding: 50px 40px;
 }
@@ -599,30 +601,33 @@ nav {
   display: inline-block;
   width: 80px;
   height: 4px;
-  border-radius: 10px;
   margin: 25px 0px 20px 0px;
 }
 
 .welcome_content .span_bg1 {
   background-image: -ms-linear-gradient(145deg, rgb(35, 204, 136) 0%, rgb(142, 207, 53) 100%);
+  background-image: linear-gradient( 145deg, rgb(35,204,136) 0%, rgb(142,207,53) 100%);
   -webkit-box-shadow: 0px 18px 30px 0px rgba(38, 204, 133, 0.36);
           box-shadow: 0px 18px 30px 0px rgba(38, 204, 133, 0.36);
 }
 
 .welcome_content .span_bg2 {
   background-image: -ms-linear-gradient(145deg, rgb(255, 79, 88) 0%, rgb(255, 180, 0) 100%);
+  background-image: linear-gradient(145deg, rgb(255, 79, 88) 0%, rgb(255, 180, 0) 100%);
   -webkit-box-shadow: 0px 18px 24px 0px rgba(255, 114, 58, 0.36);
           box-shadow: 0px 18px 24px 0px rgba(255, 114, 58, 0.36);
 }
 
 .welcome_content .span_bg3 {
   background-image: -ms-linear-gradient(145deg, rgb(1, 203, 173) 0%, rgb(71, 161, 242) 100%);
+  background-image: linear-gradient(145deg, rgb(1, 203, 173) 0%, rgb(71, 161, 242) 100%);
   -webkit-box-shadow: 0px 18px 24px 0px rgba(1, 203, 173, 0.36);
           box-shadow: 0px 18px 24px 0px rgba(1, 203, 173, 0.36);
 }
 
 .welcome_content .span_bg4 {
   background-image: -ms-linear-gradient(145deg, rgb(232, 90, 202) 0%, rgb(252, 78, 101) 100%);
+  background-image: linear-gradient(145deg, rgb(232, 90, 202) 0%, rgb(252, 78, 101) 100%);
   -webkit-box-shadow: 0px 18px 24px 0px rgba(233, 89, 197, 0.36);
           box-shadow: 0px 18px 24px 0px rgba(233, 89, 197, 0.36);
 }
