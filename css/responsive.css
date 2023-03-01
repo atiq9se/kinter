@@ -265,5 +265,18 @@
       text-align: center;
       padding-top: 10px;
     }
+    @media (max-width: 420px) {
+        .section_header h2 {
+            font-size: 28px;
+        }
+        .counterBox h4 {
+            font-size: 32px;
+        }
+        .counterBox {
+            margin-bottom: 35px;
+        }
+
+    }
+
   }
   
