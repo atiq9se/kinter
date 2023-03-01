@@ -1747,6 +1747,7 @@ footer {
     right: 0%;
     height: 92vh;
     top: 8vh;
+    padding-top:110px;
     background: linear-gradient(145deg, rgb(255, 79, 88) 0%, rgb(255, 180, 0) 100%);
     -webkit-box-shadow: 0px 4px 6px 0px rgba(255, 114, 58, 0.36);
             box-shadow: 0px 4px 6px 0px rgba(255, 114, 58, 0.36);
