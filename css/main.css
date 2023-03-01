@@ -12,7 +12,9 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
+img{
+  width: 100%;
+}
 h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
   padding: 0;
@@ -768,6 +770,9 @@ nav {
   margin-bottom: 0;
   margin-top: 5px;
 }
+.counterBoxImg img{
+  width: 50px;
+}
 
 .blogBox {
   background-color: #fff;
@@ -985,6 +990,7 @@ nav {
   font-weight: normal;
   color: #00394f;
   font-size: 36px;
+  line-height: 42px;
 }
 
 .aboutHeader p {
@@ -1500,15 +1506,201 @@ footer {
   background: #bd081c;
 }
 
+
+
+
+
+/* about page css */
+
+.aboutImg img{
+  width: 100%;
+}
+
+.videoMain img{
+  width: 100%;
+}
+
+/* teacher page css */
+.teacher{
+  box-shadow: 0px 0px 10px 0px rgba(136, 136, 136, 0.1);
+}
+.teacherImg img{
+  width:100%;
+}
+
+/* class details page css */
+.classDetailsImg img{
+  width:100%;
+}
+.classDetailsText{
+  padding:30px 50px;
+}
+.adminText{
+  display: flex;
+  gap: 20px;
+}
+.cdpText{
+  padding:10px 0px;
+}
+.cdpText img{
+  width: 100%;
+  margin-top:10px;
+}
+.cdpText p{
+  font-size: 16px;
+  line-height: 28px;
+  color:#555;
+  text-align:justify;
+  font-family: 'Roboto', sans-serif;
+}
+.cdpVideo img{
+  width: 100%;
+}
+.cdpShare{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courseFeatures{
+  padding:30px 35px;
+}
+.courseFeatures li{
+   display: flex;
+   align-items: center;
+   color:#555;
+   padding:10px 0px;
+   font-size: 17px;
+}
+.courseFeatures li .que{
+   width:45%;
+}
+.courseFeatures li .ans{
+   position:relative;
+   font-family: 'Roboto', sans-serif;
+   color:#00394f;
+   padding-left:8px;
+}
+.courseFeatures li .ans:after{
+   position:absolute;
+   content:':';
+   top:45%;
+   transform: translateY(-50%);
+   left:0;
+   width:20px;
+}
+.sidePost{
+  display: flex;
+  gap:4%;
+  border-bottom:1px solid #f6fafd;
+  padding:20px;
+}
+.sidePostI{
+  flex:0 0 35%;
+}
+.sidePostI img{
+  width:100%;
+}
+.sidePostText a {
+	display: inline !important;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position-y: -2px;
+	background-image: linear-gradient(transparent calc(100% - 2px),currentColor 1px);
+	transition: .6s cubic-bezier(.215,.61,.355,1);
+	background-size: 0 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  color:#00394f;
+  font-size: 18px;
+  font-weight: bold;
+}
+.sidePostText a:hover {
+	background-size: 100% 100%;
+}
+
+.popularTag {
+  display: flex;
+  flex-wrap:wrap;
+  padding:20px;
+  gap:3%;
+}
+.popularTag .tagButton{
+  margin-bottom: 10px;
+}
+.archiveList{
+  padding:20px 30px;
+}
+.archiveList a{
+  display: flex;
+  justify-content: space-between;
+  color:#00394f;
+  font-size: 18px;
+  padding:15px 0px;
+  border-bottom: 1px solid #f6fafd;
+  transition:all linear .5s;
+}
+.archiveList a:hover{
+  color:#23cc88;
+  padding-left:5px;
+}
+
+.pagination a{
+  display: flex;
+  gap:10px;
+  color: #2f2838;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #edf7fe;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  justify-content: center;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition:all linear .5s;
+}
+.pagination a:hover{
+  background: linear-gradient(145deg, rgb(35, 204, 136) 0%, rgb(142, 207, 53) 100%);
+}
+.pagination a.active{
+  background: linear-gradient(145deg, rgb(35, 204, 136) 0%, rgb(142, 207, 53) 100%);
+}
+.pagination a i{
+  line-height: 45px;
+}
+
+
+
+
+/* ===== Responsive part css start ===== */
 @media (max-width: 1199px) {
+  .mb_30_lg{
+    margin-bottom: 30px;
+  }
+  .mb_45_lg{
+    margin-bottom: 45px;
+  }
+
   .top_header p {
     font-size: 13px;
   }
   .top_bleft {
     padding-left: 7px;
   }
-  .nav-links {
-    width: 80%;
+  .menu_btn {
+    margin-left: 100px;
+  }
+  .banner_content h3 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .banner_content h2 {
+    font-family: "Fredoka One", sans-serif;
+    color: #fff;
+    font-size: 52px;
+    line-height: 62px;
+  }
+  .about_header h2 {
+    font-size: 28px;
   }
   .footerTopText span {
     font-size: 16px;
@@ -1518,6 +1710,21 @@ footer {
   }
 }
 @media (max-width: 992px) {
+  .mb_30_md{
+    margin-bottom: 30px;
+  }
+  .mb_60_md{
+    margin-bottom: 60px;
+  }
+  .mt_30_md{
+    margin-top:30px;
+  }
+  .mt_60_md{
+    margin-top:60px;
+  }
+  .top_header_bg {
+    display: none;
+  }
   .top_bleft {
     border-left: none;
     padding-left: 0px;
@@ -1644,14 +1851,15 @@ footer {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
   }
+  .footerTopIcon img{
+    width:30px;
+  }
 }
 @media (max-width: 768px) {
   .ptb_100 {
     padding: 60px 0px;
   }
-  .top_header_bg {
-    display: none;
-  }
+  
   /* banner part*/
   .banner_item {
     padding: 100px 0px;
@@ -1678,6 +1886,41 @@ footer {
     height: 50px;
     line-height: 50px !important;
   }
+  .aboutHeader h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .breadcrumbTitle h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .cdpShare{
+    flex-wrap: wrap;
+  }
+  .adminText{
+    flex-wrap: wrap;
+  }
+  .classDetailsText {
+    padding: 30px 20px;
+  }
+  .adminText{
+    margin-bottom: 30px;
+  }
+  .adminText p{
+    line-height: 18px;
+  }
+  .galleryMenu {
+    flex-wrap: wrap;
+  }
+  .galleryMenu li {
+    border-bottom: none;
+  }
+  .formArea {
+    padding: 50px 15px;
+  }
+  .breadcrumbTitle h2 {
+    font-size: 32px;
+  }
   .footerTopBorder {
     border-bottom: none;
   }
@@ -1696,162 +1939,4 @@ footer {
   }
 }
 
-
-/* about page css */
-
-.aboutImg img{
-  width: 100%;
-}
-
-.videoMain img{
-  width: 100%;
-}
-
-/* teacher page css */
-.teacher{
-  box-shadow: 0px 0px 10px 0px rgba(136, 136, 136, 0.1);
-}
-.teacherImg img{
-  width:100%;
-}
-
-/* class details page css */
-.classDetailsImg img{
-  width:100%;
-}
-.classDetailsText{
-  padding:30px 50px;
-}
-.adminText{
-  display: flex;
-  gap: 20px;
-}
-.cdpText{
-  padding:10px 0px;
-}
-.cdpText img{
-  width: 100%;
-  margin-top:10px;
-}
-.cdpText p{
-  font-size: 16px;
-  line-height: 28px;
-  color:#555;
-  text-align:justify;
-  font-family: 'Roboto', sans-serif;
-}
-.cdpVideo img{
-  width: 100%;
-}
-.cdpShare{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.courseFeatures{
-  padding:30px 35px;
-}
-.courseFeatures li{
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   color:#555;
-   padding:10px 0px;
-   font-size: 17px;
-}
-.courseFeatures li .que{
-   width:45%;
-}
-.courseFeatures li .ans{
-   position:relative;
-   font-family: 'Roboto', sans-serif;
-   color:#00394f;
-   padding-left:8px;
-}
-.courseFeatures li .ans:after{
-   position:absolute;
-   content:':';
-   top:45%;
-   transform: translateY(-50%);
-   left:0;
-   width:20px;
-}
-.sidePost{
-  display: flex;
-  gap:4%;
-  border-bottom:1px solid #f6fafd;
-  padding:20px;
-}
-.sidePostI{
-  flex:0 0 35%;
-}
-.sidePostI img{
-  width:100%;
-}
-.sidePostText a {
-	display: inline !important;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-position-y: -2px;
-	background-image: linear-gradient(transparent calc(100% - 2px),currentColor 1px);
-	transition: .6s cubic-bezier(.215,.61,.355,1);
-	background-size: 0 100%;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-  color:#00394f;
-  font-size: 18px;
-  font-weight: bold;
-}
-.sidePostText a:hover {
-	background-size: 100% 100%;
-}
-
-.popularTag {
-  display: flex;
-  flex-wrap:wrap;
-  padding:20px;
-  gap:3%;
-}
-.popularTag .tagButton{
-  margin-bottom: 10px;
-}
-.archiveList{
-  padding:20px 30px;
-}
-.archiveList a{
-  display: flex;
-  justify-content: space-between;
-  color:#00394f;
-  font-size: 18px;
-  padding:15px 0px;
-  border-bottom: 1px solid #f6fafd;
-  transition:all linear .5s;
-}
-.archiveList a:hover{
-  color:#23cc88;
-  padding-left:5px;
-}
-
-.pagination a{
-  display: flex;
-  gap:10px;
-  color: #2f2838;
-  font-family: 'Roboto', sans-serif;
-  border: 1px solid #edf7fe;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  justify-content: center;
-  border-radius: 5px;
-  margin-right: 10px;
-  transition:all linear .5s;
-}
-.pagination a:hover{
-  background: linear-gradient(145deg, rgb(35, 204, 136) 0%, rgb(142, 207, 53) 100%);
-}
-.pagination a.active{
-  background: linear-gradient(145deg, rgb(35, 204, 136) 0%, rgb(142, 207, 53) 100%);
-}
-.pagination a i{
-  line-height: 45px;
-}
+/* Responsive part css end */
